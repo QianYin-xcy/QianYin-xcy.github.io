@@ -911,40 +911,40 @@ article#tag .all-tags ul li span:before {
   border-bottom: 1px solid var(--color-text-a10);
 }
 .article h1 {
-  text-align: left;
+  text-align: center;
   color: var(--color-h1);
-  margin-top: 48px;
+  margin-top: 36px;
 }
 .article h2 {
   text-align: left;
   color: var(--color-h2);
-  margin-top: 48px;
+  margin-top: 36px;
 }
 .article h3 {
   text-align: left;
   color: var(--color-h3);
-  margin-top: 24px;
+  margin-top: 20px;
 }
 .article h4 {
   text-align: left;
   color: var(--color-h4);
-  margin-top: 16px;
+  margin-top: 12px;
 }
 .article h5 {
   font-weight: bold;
   color: var(--color-h5);
-  margin-top: 1em;
+  margin-top: 0.8em;
 }
 .article h6 {
   color: var(--color-h6);
-  margin-top: 1em;
+  margin-top: 0.8em;
 }
 .article center,
 .article center p {
   text-align: center;
 }
 .article .aplayer {
-  margin: 1em 0;
+  margin: 0.8em 0;
   display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
   display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
   display: inline-block;
@@ -967,8 +967,8 @@ article#tag .all-tags ul li span:before {
   text-decoration-color: var(--color-mix60-p-card);
 }
 .article p {
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
   text-align: justify;
   max-width: 100%;
   line-height: inherit;
@@ -1014,7 +1014,7 @@ article#tag .all-tags ul li span:before {
   text-align: justify;
   color: inherit;
   font-style: italic;
-  margin: 1em 0;
+  margin: 0.8em 0;
 }
 .article blockquote footer cite {
   color: var(--color-meta);
@@ -1039,8 +1039,8 @@ article#tag .all-tags ul li span:before {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
   overflow: auto;
   background: var(--color-codeblock);
   font-size: 0.8125rem;
@@ -1084,7 +1084,7 @@ article#tag .all-tags ul li span:before {
 }
 .article .widget {
   background: transparent;
-  margin: 1em 0;
+  margin: 0.8em 0;
   box-shadow: none;
   -webkit-box-shadow: none;
   border-radius: 4px;
@@ -1227,8 +1227,8 @@ article#tag .all-tags ul li span:before {
   margin-top: 64px;
 }
 .md .footer >div {
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
 }
 .md .footer .header {
   line-height: 1.75;
@@ -2091,18 +2091,28 @@ svg.loading {
 }
 #l_main {
   width: calc(100% - 1 * 240px);
-  padding-right: 16px;
+  padding-left: 16px;
   float: left;
+  -webkit-box-ordinal-group: 2;
+  -moz-box-ordinal-group: 2;
+  -ms-flex-order: 2;
+  -webkit-order: 2;
+  order: 2;
 }
 @media screen and (max-width: 768px) {
   #l_main {
     width: 100%;
   }
 }
+@media screen and (max-width: 768px) {
+  #l_main {
+    padding-left: 0;
+  }
+}
 #l_main.no_sidebar {
   width: 100%;
   padding-right: 0;
-  max-width: 840px;
+  max-width: -170vw;
   margin: auto;
 }
 @media screen and (min-width: 2048px) {
@@ -2135,14 +2145,14 @@ svg.loading {
 #l_main .widget .content table,
 #l_main .widget .content .tabs,
 #l_main .widget .content details {
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
 }
 #l_main .widget .content .post {
   padding-top: 0;
   padding-bottom: 0;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
 }
 #l_main .widget.grid .content .grid.fixed a {
   width: calc(100%/8 - 0 * 16px);
@@ -2513,7 +2523,7 @@ svg.loading {
   display: flex /* NEW, Spec - Opera 12.1, Firefox 20+ */;
   display: flex;
   width: 100%;
-  max-width: 1080px;
+  max-width: 70vw;
   margin: 0 auto;
   flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
@@ -2536,14 +2546,14 @@ svg.loading {
 }
 article#comments p[ct] {
   margin-top: 0;
-  margin-bottom: 1em;
+  margin-bottom: 0.8em;
   font-size: 1.125rem;
   color: var(--color-text);
   font-weight: 600;
 }
 article#comments p[cst] {
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
   font-size: 0.875rem;
 }
 article#comments #load-btns,
@@ -2653,36 +2663,36 @@ img.lazyload:not(.placeholder).loaded {
   display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
   display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
   display: block;
-  margin-top: -48px;
-  height: 96px;
+  margin-top: 6vh;
+  height: 42vh;
   visibility: hidden;
   pointer-events: none;
 }
 .md h1:before,
 .md h2:before {
-  margin-top: -32px;
+  margin-top: 10px;
 }
 .md .article-meta+h1,
 .md .article-meta+h2 {
-  margin-top: -80px;
+  margin-top: -38px;
 }
 .md h3,
 .md h4,
 .md h5,
 .md h6 {
-  margin-bottom: 1em;
+  margin-bottom: 0.8em;
 }
 .md h3:before {
-  margin-top: -56px;
+  margin-top: -6px;
 }
 .md h4:before {
-  margin-top: -64px;
+  margin-top: -14px;
 }
 .md h5 {
   font-weight: bold;
 }
 .md h2+h3:before {
-  margin-top: -80px;
+  margin-top: -38px;
 }
 .md ul,
 .md ol {
@@ -2690,8 +2700,8 @@ img.lazyload:not(.placeholder).loaded {
   list-style: initial;
   padding-left: 8px;
   margin-left: 16px;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
 }
 .md ul ul,
 .md ol ul,
@@ -3167,6 +3177,11 @@ img.lazyload:not(.placeholder).loaded {
 #l_side {
   width: 240px;
   float: right;
+  -webkit-box-ordinal-group: 1;
+  -moz-box-ordinal-group: 1;
+  -ms-flex-order: 1;
+  -webkit-order: 1;
+  order: 1;
   position: relative;
   display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
   display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
@@ -3192,7 +3207,7 @@ img.lazyload:not(.placeholder).loaded {
 }
 #l_side .widget.sticky {
   position: sticky;
-  top: 80px;
+  top: 26vh;
   z-index: 1;
 }
 #l_side .widget >.content {
@@ -3278,11 +3293,11 @@ img.lazyload:not(.placeholder).loaded {
   padding: 8px 0;
 }
 .widget >.content p {
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
 }
 .widget >.content p:first-child {
-  margin-top: 0.5em;
+  margin-top: 0.4em;
 }
 .widget >.content ul>li a {
   color: var(--color-meta);
@@ -3395,7 +3410,7 @@ img.lazyload:not(.placeholder).loaded {
   width: 128px;
   height: 128px;
   margin-top: 32px;
-  margin-bottom: 1em;
+  margin-bottom: 0.8em;
 }
 .widget.blogger .content >.avatar.circle img {
   display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
@@ -3802,7 +3817,7 @@ img.lazyload:not(.placeholder).loaded {
 }
 .widget-sticky {
   position: sticky;
-  top: 80px;
+  top: 26vh;
   z-index: 10;
 }
 .widget-body.tag-tree .tag-subtree > a > .tag-switcher-wrapper {
@@ -3973,10 +3988,10 @@ img.lazyload:not(.placeholder).loaded {
   z-index: 2;
 }
 .snackbar-content {
-  max-width: 1080px;
+  max-width: 70vw;
   margin: 16px auto;
 }
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 70vw) {
   .snackbar-content {
     max-width: 100%;
   }
@@ -4063,7 +4078,7 @@ svg.active-icon {
   padding-bottom: 4px;
 }
 #l_side .toc-wrapper .content {
-  max-height: calc(100vh - 144px);
+  max-height: calc(100vh - 90px);
 }
 #l_side .toc-wrapper .content a {
   border-left: 2px solid transparent;
@@ -4084,7 +4099,7 @@ svg.active-icon {
     max-height: 1000px;
     width: auto;
     max-width: calc(100% - 2 * 16px);
-    top: 48px;
+    top: -6vh;
     right: 16px;
     border-radius: 4px;
     -webkit-border-radius: 4px;
@@ -6165,14 +6180,14 @@ a.tag-plugin.button:hover {
   display: flex /* NEW, Spec - Opera 12.1, Firefox 20+ */;
   display: flex;
   align-items: center;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
 /* Checkbox */
 /* Radio */
 /* Colors */
 }
 .md .checkbox+.checkbox {
-  margin-top: -1em;
+  margin-top: -0.8em;
 }
 .md .checkbox input {
   transform: translate(0, -1px);
@@ -6935,7 +6950,7 @@ details {
   display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
   display: block;
   padding: 16px;
-  margin: 1em 0;
+  margin: 0.8em 0;
   border-radius: 4px;
   -webkit-border-radius: 4px;
   background: var(--color-card);
@@ -7775,11 +7790,11 @@ details[open].tag-plugin >summary {
   -webkit-box-shadow: 0 2px 4px 0px rgba(0,0,0,0.1), 0 4px 8px 0px rgba(0,0,0,0.1), 0 8px 16px 0px rgba(0,0,0,0.1);
 }
 div.gallery {
-  margin: 1em 0;
+  margin: 0.8em 0;
   overflow: hidden;
 }
 div.gallery+.gallery {
-  margin-top: -1em;
+  margin-top: -0.8em;
 }
 div.gallery >.fancybox,
 div.gallery >p>.fancybox {
@@ -7938,8 +7953,8 @@ div.gallery.stretch>p {
   cursor: zoom-out;
 }
 div.fancybox {
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
   display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
   display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
   display: -ms-flexbox /* TWEENER - IE 10 */;
@@ -7987,8 +8002,8 @@ div.fancybox .gallery {
 }
 div.fancybox .image-caption {
   font-size: 0.8125rem;
-  padding-top: 0.5em;
-  padding-bottom: 1em;
+  padding-top: 0.4em;
+  padding-bottom: 0.8em;
   color: var(--color-meta);
 }
 div.fancybox .image-caption:empty {
@@ -8451,11 +8466,11 @@ img.inline {
   display: none;
 }
 .md .tag.link {
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
 }
 .md .link-card {
-  margin-right: 1em;
+  margin-right: 0.8em;
   background: var(--color-block);
   display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
   display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
@@ -8790,7 +8805,7 @@ div.videos {
   -o-justify-content: flex-start;
   -ms-justify-content: flex-start;
   align-items: flex-end;
-  margin: 1em -4px;
+  margin: 0.8em -4px;
 }
 div.videos .video,
 div.videos iframe {
@@ -8903,8 +8918,8 @@ div.videos[col='4'] iframe {
 }
 div.note {
   position: relative;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
   padding: 16px;
   padding-left: calc(16px + 16px);
   border-radius: 4px;
@@ -8928,8 +8943,8 @@ div.note ul,
 div.note ol,
 div.note blockquote,
 div.note img {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
 }
 div.note .link-card {
   background: var(--color-card);
@@ -10127,32 +10142,32 @@ span.p.h1,
 p.p.h1 {
   font-size: 1.5rem;
   color: var(--color-h1);
-  padding-top: 2em;
+  padding-top: 1.6em;
 }
 span.p.h2,
 p.p.h2 {
   font-size: 1.5rem;
   color: var(--color-h2);
-  padding-top: 2em;
+  padding-top: 1.6em;
   border-bottom: 1px solid var(--color-text-a10);
 }
 span.p.h3,
 p.p.h3 {
   font-size: 1.25rem;
   color: var(--color-h3);
-  padding-top: 2em;
+  padding-top: 1.6em;
 }
 span.p.h4,
 p.p.h4 {
   font-size: 1.125rem;
   color: var(--color-h4);
-  padding-top: 2em;
+  padding-top: 1.6em;
 }
 span.p.h5,
 p.p.h5 {
   font-size: 1rem;
   color: var(--color-h5);
-  padding-top: 1.5em;
+  padding-top: 1.2em;
 }
 span.p.red,
 p.p.red {
@@ -10263,8 +10278,8 @@ div.swiper-slide img {
 }
 .md .table {
   overflow: auto;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
 }
 .md .table table {
   display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
@@ -10277,8 +10292,8 @@ div.tabs {
   display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
   display: block;
   position: relative;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
   border-radius: 4px;
   -webkit-border-radius: 4px;
   background: var(--color-card);
@@ -10291,8 +10306,8 @@ div.tabs ul,
 div.tabs ol,
 div.tabs div.note,
 div.tabs details {
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
 }
 div.tabs ul.nav-tabs {
   display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
@@ -10552,10 +10567,10 @@ div.timenode-v5 .body:empty {
   display: none;
 }
 div.timenode-v5 .body >*:first-child {
-  margin-top: 0.25em;
+  margin-top: 0.2em;
 }
 div.timenode-v5 .body >*:last-child {
-  margin-bottom: 0.25em;
+  margin-bottom: 0.2em;
 }
 div.timenode-v5 .body .highlight {
   border: 1px solid var(--color-mix90-block-text);
@@ -11762,7 +11777,7 @@ pre {
 .highlight {
   position: relative;
   width: 100%;
-  margin: 1em 0;
+  margin: 0.8em 0;
   display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
   display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
   display: block;

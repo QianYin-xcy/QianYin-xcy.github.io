@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="http://example.com/archives/2026/08/"/>
+  <link rel="canonical" href="https://www.qianyin-xcy.top/archives/2026/08/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -37,7 +37,7 @@
   
 <meta property="og:type" content="website">
 <meta property="og:title" content="QinYin-xcy的博客">
-<meta property="og:url" content="http://example.com/archives/2026/08/index.html">
+<meta property="og:url" content="https://www.qianyin-xcy.top/archives/2026/08/index.html">
 <meta property="og:site_name" content="QinYin-xcy的博客">
 <meta property="og:description" content="这是一个个人博客">
 <meta property="og:locale" content="en_US">
@@ -212,7 +212,7 @@ body {
   background-color: var(--color-site-body);
   text-rendering: optimizelegibility;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
-  line-height: 1.6;
+  line-height: 1.5;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
@@ -315,7 +315,7 @@ button {
   -webkit-box-shadow: 0 2px 4px 0px rgba(0,0,0,0.1), 0 4px 8px 0px rgba(0,0,0,0.1), 0 8px 16px 0px rgba(0,0,0,0.1);
 }
 #l_cover {
-  min-height: 64px;
+  min-height: 10vh;
 }
 .cover-wrapper {
   top: 0;
@@ -464,7 +464,7 @@ button {
 .cover-wrapper#half {
   max-height: 640px;
   min-height: 400px;
-  height: calc(36vh - 64px + 200px);
+  height: calc(36vh - 10vh + 200px);
 }
 .cover-wrapper #scroll-down {
   width: 100%;
@@ -570,7 +570,7 @@ button {
   }
 }
 .cover-wrapper .cover-body {
-  margin-top: 64px;
+  margin-top: 10vh;
   margin-bottom: 100px;
 }
 .cover-wrapper .cover-body,
@@ -935,7 +935,7 @@ button {
   z-index: 1000;
   top: 0;
   width: 100%;
-  height: 64px;
+  height: 10vh;
   background: var(--color-card);
   box-shadow: 0 1px 2px 0px rgba(0,0,0,0.1);
   -webkit-box-shadow: 0 1px 2px 0px rgba(0,0,0,0.1);
@@ -997,12 +997,12 @@ button {
   -ms-transition: all 0.28s ease;
 }
 .l_header #wrapper.sub .nav-main {
-  transform: translateY(-64px);
-  -webkit-transform: translateY(-64px);
-  -khtml-transform: translateY(-64px);
-  -moz-transform: translateY(-64px);
-  -o-transform: translateY(-64px);
-  -ms-transform: translateY(-64px);
+  transform: translateY(-10vh);
+  -webkit-transform: translateY(-10vh);
+  -khtml-transform: translateY(-10vh);
+  -moz-transform: translateY(-10vh);
+  -o-transform: translateY(-10vh);
+  -ms-transform: translateY(-10vh);
 }
 .l_header #wrapper .nav-sub {
   transition: all 0.28s ease;
@@ -1014,7 +1014,7 @@ button {
   opacity: 0;
   -webkit-opacity: 0;
   -moz-opacity: 0;
-  height: 64px;
+  height: 10vh;
   width: calc(100% - 2 * 16px);
   position: absolute;
 }
@@ -1038,30 +1038,30 @@ button {
   position: relative;
   color: var(--color-text);
   padding-left: 24px;
-  max-height: 64px;
+  max-height: 10vh;
 }
 .l_header #wrapper .nav-main .title {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   flex-shrink: 0;
-  line-height: 64px;
+  line-height: 10vh;
   padding: 0 24px;
   font-size: 1.25rem;
   font-family: "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Helvetica, monospace;
 }
 .l_header #wrapper .nav-main .title img {
-  height: 64px;
+  height: 10vh;
 }
 .l_header .nav-sub {
-  max-width: 1080px;
+  max-width: 70vw;
   margin: auto;
 }
 .l_header .nav-sub .title {
   font-weight: bold;
   font-family: UbuntuMono, "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Menlo, Monaco, monospace, sans-serif;
   line-height: 1.2;
-  max-height: 64px;
+  max-height: 10vh;
   white-space: normal;
   flex-shrink: 1;
 }
@@ -1069,7 +1069,7 @@ button {
   display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
   display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
   display: none;
-  line-height: 64px;
+  line-height: 10vh;
   align-items: center;
 }
 .l_header .switcher .s-toc {
@@ -1088,7 +1088,7 @@ button {
   }
 }
 .l_header .switcher >li {
-  height: 48px;
+  height: -6vh;
   transition: all 0.28s ease;
   -webkit-transition: all 0.28s ease;
   -khtml-transition: all 0.28s ease;
@@ -1100,7 +1100,7 @@ button {
 @media screen and (max-width: 500px) {
   .l_header .switcher >li {
     margin: 0 1px;
-    height: 48px;
+    height: -6vh;
   }
 }
 .l_header .switcher >li >a {
@@ -1117,8 +1117,8 @@ button {
   -o-justify-content: center;
   -ms-justify-content: center;
   align-items: center;
-  width: 48px;
-  height: 48px;
+  width: -6vh;
+  height: -6vh;
   padding: 0.85em 1.1em;
   border-radius: 100px;
   -webkit-border-radius: 100px;
@@ -1142,7 +1142,7 @@ button {
 @media screen and (max-width: 500px) {
   .l_header .switcher >li >a {
     width: 36px;
-    height: 48px;
+    height: -6vh;
   }
 }
 .l_header .nav-sub .switcher {
@@ -1160,7 +1160,7 @@ button {
   display: -webkit-flex /* NEW - Chrome */;
   display: flex /* NEW, Spec - Opera 12.1, Firefox 20+ */;
   display: flex;
-  height: 64px;
+  height: 10vh;
   width: 240px;
   transition: all 0.28s ease;
   -webkit-transition: all 0.28s ease;
@@ -1291,8 +1291,8 @@ button {
     -ms-transition: all 0.28s ease;
   }
   .l_header .m_search .input {
-    border-radius: 32px;
-    -webkit-border-radius: 32px;
+    border-radius: 5vh;
+    -webkit-border-radius: 5vh;
     margin-left: 16px;
     padding-left: 16px;
   }
@@ -1439,10 +1439,10 @@ ul.list-v >li>a:hover {
 }
 .l_header ul.nav-list-h>li {
   color: var(--color-list);
-  line-height: 64px;
+  line-height: 10vh;
 }
 .l_header ul.nav-list-h>li >a {
-  max-height: 64px;
+  max-height: 10vh;
   overflow: hidden;
   color: inherit;
 }
@@ -1636,7 +1636,7 @@ ul.list-v >li>a:hover {
   right: calc(100% - 0.5 * 16px);
 }
 #wrapper {
-  max-width: 1080px;
+  max-width: 70vw;
   margin: auto;
 }
 @media screen and (min-width: 2048px) {
@@ -1686,11 +1686,11 @@ ul.list-v >li>a:hover {
 }
 @media screen and (max-width: 2048px) {
   .l_header {
-    max-width: 1112px;
-    left: calc((100% - 1112px) * 0.5);
+    max-width: 102vw;
+    left: calc((100% - 102vw) * 0.5);
   }
 }
-@media screen and (max-width: 1112px) {
+@media screen and (max-width: 102vw) {
   .l_header {
     left: 0;
     border-radius: 0;
@@ -2589,7 +2589,7 @@ document.addEventListener('DOMContentLoaded', function () {
     root: "/",
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1761982841160/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1761982841160/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1761982841160/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1761982841160/media/placeholder/image/2659360.svg","topic":"https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/10433048.png","project":"https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2779789.png","banner":"https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/banner/books.jpg","loading":"https://api.iconify.design/eos-icons:three-dots-loading.svg?color=%231cd0fd","image_onerror":"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='2rem' height='2rem' viewBox='0 0 24 24'%3E%3C!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ --%3E%3Cpath fill='%23F44336' d='M22 12.698c-.002 1.47-.013 2.718-.096 3.743c-.097 1.19-.296 2.184-.74 3.009a4.2 4.2 0 0 1-.73.983c-.833.833-1.893 1.21-3.237 1.39C15.884 22 14.2 22 12.053 22h-.106c-2.148 0-3.83 0-5.144-.177c-1.343-.18-2.404-.557-3.236-1.39c-.738-.738-1.12-1.656-1.322-2.795c-.2-1.12-.236-2.512-.243-4.241Q1.999 12.737 2 12v-.054c0-2.148 0-3.83.177-5.144c.18-1.343.557-2.404 1.39-3.236s1.893-1.21 3.236-1.39c1.168-.157 2.67-.175 4.499-.177a.697.697 0 1 1 0 1.396c-1.855.002-3.234.018-4.313.163c-1.189.16-1.906.464-2.436.994S3.72 5.8 3.56 6.99C3.397 8.2 3.395 9.788 3.395 12v.784l.932-.814a2.14 2.14 0 0 1 2.922.097l3.99 3.99a1.86 1.86 0 0 0 2.385.207l.278-.195a2.79 2.79 0 0 1 3.471.209l2.633 2.37c.265-.557.423-1.288.507-2.32c.079-.972.09-2.152.091-3.63a.698.698 0 0 1 1.396 0' opacity='.5'/%3E%3Cpath fill='%23F44336' fill-rule='evenodd' d='M17.5 11c-2.121 0-3.182 0-3.841-.659S13 8.621 13 6.5s0-3.182.659-3.841S15.379 2 17.5 2s3.182 0 3.841.659S22 4.379 22 6.5s0 3.182-.659 3.841S19.621 11 17.5 11m-1.47-7.03a.75.75 0 1 0-1.06 1.06l1.47 1.47l-1.47 1.47a.75.75 0 0 0 1.06 1.06l1.47-1.47l1.47 1.47a.75.75 0 1 0 1.06-1.06L18.56 6.5l1.47-1.47a.75.75 0 0 0-1.06-1.06L17.5 5.44z' clip-rule='evenodd'/%3E%3C/svg%3E"},
-    lastupdate: new Date(1787581793253),
+    lastupdate: new Date(1787996912464),
     scroll_behavior: "smooth",
     cdn: {
       jquery: "https://unpkg.com/jquery@3.7.1/dist/jquery.min.js",
@@ -2657,7 +2657,7 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
 
 
-    <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"QinYin-xcy的博客","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1761982841160/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"QianYin-xcy","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1761982841160/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"这是一个个人博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"QinYin-xcy的博客"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/archives/","name":"Archive"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/archives/2026/","name":"2026"}},{"@type":"ListItem","position":4,"item":{"@id":"http://example.com/archives/2026/8/","name":"8"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"QinYin-xcy的博客","url":"http://example.com/","keywords":null,"description":"这是一个个人博客","author":{"@type":"Person","name":"QianYin-xcy","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1761982841160/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"这是一个个人博客"},"publisher":{"@type":"Organization","name":"QinYin-xcy的博客","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1761982841160/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"这是一个个人博客","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"QianYin-xcy","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1761982841160/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"QinYin-xcy的博客","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1761982841160/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1761982841160/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+    <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"QinYin-xcy的博客","url":"https://www.qianyin-xcy.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1761982841160/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"QianYin-xcy","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1761982841160/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://www.qianyin-xcy.top/","sameAs":["https://github.com/volantis-x"],"description":"这是一个个人博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://www.qianyin-xcy.top/","name":"QinYin-xcy的博客"}},{"@type":"ListItem","position":2,"item":{"@id":"https://www.qianyin-xcy.top/archives/","name":"Archive"}},{"@type":"ListItem","position":3,"item":{"@id":"https://www.qianyin-xcy.top/archives/2026/","name":"2026"}},{"@type":"ListItem","position":4,"item":{"@id":"https://www.qianyin-xcy.top/archives/2026/8/","name":"8"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"QinYin-xcy的博客","url":"https://www.qianyin-xcy.top/","keywords":null,"description":"这是一个个人博客","author":{"@type":"Person","name":"QianYin-xcy","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1761982841160/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://www.qianyin-xcy.top/","description":"这是一个个人博客"},"publisher":{"@type":"Organization","name":"QinYin-xcy的博客","url":"https://www.qianyin-xcy.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1761982841160/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://www.qianyin-xcy.top?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"这是一个个人博客","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"QianYin-xcy","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1761982841160/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://www.qianyin-xcy.top/"},"publisher":{"@type":"Organization","name":"QinYin-xcy的博客","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1761982841160/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1761982841160/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
   <!-- import head_end begin -->
   <!-- import head_end end -->
   <!-- Custom Files headEnd begin-->
@@ -2670,7 +2670,7 @@ document.addEventListener('DOMContentLoaded', function () {
     <!-- Custom Files bodyBegin begin-->
     
     <!-- Custom Files bodyBegin end-->
-    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur " style='opacity: 0' >
+    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header always shadow floatable "  >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -2686,8 +2686,6 @@ document.addEventListener('DOMContentLoaded', function () {
       
         
         <a class="title flat-box" target="_self" href='/'>
-          
-            <img no-lazy alt="logo" class='logo' src='https://unpkg.com/volantis-static@0.0.1761982841160/media/org.volantis/blog/Logo-NavBar@3x.png'/>
           
           
           
@@ -2709,7 +2707,7 @@ document.addEventListener('DOMContentLoaded', function () {
                   
                     active-action="action-home"
                   >
-                  <i class='fa-solid fa-rss fa-fw'></i>博客
+                  <i class='fa-solid fa-blog fa-fw'></i>博客
                 </a>
                 
               </li>
@@ -2830,7 +2828,7 @@ document.addEventListener('DOMContentLoaded', function () {
                   
                     active-action="action-home"
                   >
-                  <i class='fa-solid fa-rss fa-fw'></i>博客
+                  <i class='fa-solid fa-blog fa-fw'></i>博客
                 </a>
                 
               </li>
@@ -3038,9 +3036,9 @@ document.addEventListener('DOMContentLoaded', function () {
             
 
 <!-- 文章预览卡片容器，使用schema.org的Article类型进行结构化数据标记 -->
-<div class="post post-v3 white-box reveal shadow floatable blur" itemscope itemtype="http://schema.org/Article">
+<div class="post post-v3 white-box reveal shadow floatable" itemscope itemtype="http://schema.org/Article">
   <!-- 标记文章的主要页面链接 -->
-  <link itemprop="mainEntityOfPage" href="http://example.com/2026/08/23/hello-world/">
+  <link itemprop="mainEntityOfPage" href="https://www.qianyin-xcy.top/2026/08/23/hello-world/">
   
   <!-- 隐藏的发布者信息，使用schema.org的Organization类型 -->
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -3145,56 +3143,25 @@ Qu...
     
       
 
-<section class="widget blogger desktop mobile shadow floatable blur pjax">
+<section class="widget blogger desktop shadow floatable blur pjax">
   <div class='content'>
     
       
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://unpkg.com/volantis-static@0.0.1761982841160/media/org.volantis/blog/Logo-NavBar@3x.png' alt='avatar' />
+        <a class='avatar flat-box circle' href='/about/'>
+          <img no-lazy src='/images/profile_photo.jpg' alt='avatar' />
         </a>
       
     
     
-    
-      <div class="social-wrapper">
+      <div class='text'>
         
-          
-            <a href="/atom.xml"
-              class="social fa-solid fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
         
-          
-            <a href="mailto:me@xxx.com"
-              class="social fa-solid fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
         
-          
-            <a href="https://github.com/volantis-x/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/"
-              class="social fa-solid fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
+          <p><span id="jinrishici-sentence">QinYin-xcy的博客</span></p>
+          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
         
       </div>
+    
     
   </div>
 </section>

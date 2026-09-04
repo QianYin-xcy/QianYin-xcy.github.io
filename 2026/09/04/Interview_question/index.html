@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   <meta name="robots" content="index,follow,max-image-preview:large">
-  <link rel="canonical" href="https://www.qianyin-xcy.top/2026/09/03/C_launguage_wrong answer/"/>
+  <link rel="canonical" href="https://www.qianyin-xcy.top/2026/09/04/Interview_question/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -31,21 +31,20 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>C语言错题 - QinYin-xcy的博客</title>
-  <meta name="keywords" content="笔记, C语言错题,null">
+  <title>面试题 - QinYin-xcy的博客</title>
+  <meta name="keywords" content="null">
   <meta desc name="description" content="这是一个个人博客 - QianYin-xcy - QinYin-xcy的博客">
   
 <meta property="og:type" content="article">
-<meta property="og:title" content="C语言错题">
-<meta property="og:url" content="https://www.qianyin-xcy.top/2026/09/03/C_launguage_wrong%20answer/index.html">
+<meta property="og:title" content="面试题">
+<meta property="og:url" content="https://www.qianyin-xcy.top/2026/09/04/Interview_question/index.html">
 <meta property="og:site_name" content="QinYin-xcy的博客">
-<meta property="og:description" content="记录学习过程中错误、混淆的 C 语言知识点，持续更新……   📌 第 1 题：^和&lt;&lt;的优先级设有以下语句： 12char a &#x3D; 3, b &#x3D; 6, c;c &#x3D; a ^ b &lt;&lt; 2; 则 c 的二进制值是 ______。 ❌ 我的错误答案：0100（即十进制 4）,错误原因：混淆了 ^ 和 &lt;&lt; 的优先级，误以为按位异或先于左移，于是先计算 a ^ b，">
+<meta property="og:description" content="嵌入式介绍（1）嵌入式是一个体积小，效率高，软硬件可裁剪的系统软件。(对体积小，效率高，软硬件可裁剪进行补充)嵌入式开发语言（1）C语言 –底层开发 – 面向过程嵌入式开发平台（1）Linux系统 – ubuntu系统 （2）安装虚拟机 – VMware （3）安装ubantu">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1761982841160/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2026-09-03T00:49:47.616Z">
-<meta property="article:modified_time" content="2026-09-03T23:53:39.265Z">
+<meta property="article:published_time" content="2026-09-04T00:50:41.947Z">
+<meta property="article:modified_time" content="2026-09-04T02:12:55.180Z">
 <meta property="article:author" content="QianYin-xcy">
-<meta property="article:tag" content="C语言错题">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1761982841160/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2476,7 +2475,7 @@ document.addEventListener('DOMContentLoaded', function () {
     root: "/",
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1761982841160/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1761982841160/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1761982841160/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1761982841160/media/placeholder/image/2659360.svg","topic":"https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/10433048.png","project":"https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2779789.png","banner":"https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/banner/books.jpg","loading":"https://api.iconify.design/eos-icons:three-dots-loading.svg?color=%231cd0fd","image_onerror":"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='2rem' height='2rem' viewBox='0 0 24 24'%3E%3C!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ --%3E%3Cpath fill='%23F44336' d='M22 12.698c-.002 1.47-.013 2.718-.096 3.743c-.097 1.19-.296 2.184-.74 3.009a4.2 4.2 0 0 1-.73.983c-.833.833-1.893 1.21-3.237 1.39C15.884 22 14.2 22 12.053 22h-.106c-2.148 0-3.83 0-5.144-.177c-1.343-.18-2.404-.557-3.236-1.39c-.738-.738-1.12-1.656-1.322-2.795c-.2-1.12-.236-2.512-.243-4.241Q1.999 12.737 2 12v-.054c0-2.148 0-3.83.177-5.144c.18-1.343.557-2.404 1.39-3.236s1.893-1.21 3.236-1.39c1.168-.157 2.67-.175 4.499-.177a.697.697 0 1 1 0 1.396c-1.855.002-3.234.018-4.313.163c-1.189.16-1.906.464-2.436.994S3.72 5.8 3.56 6.99C3.397 8.2 3.395 9.788 3.395 12v.784l.932-.814a2.14 2.14 0 0 1 2.922.097l3.99 3.99a1.86 1.86 0 0 0 2.385.207l.278-.195a2.79 2.79 0 0 1 3.471.209l2.633 2.37c.265-.557.423-1.288.507-2.32c.079-.972.09-2.152.091-3.63a.698.698 0 0 1 1.396 0' opacity='.5'/%3E%3Cpath fill='%23F44336' fill-rule='evenodd' d='M17.5 11c-2.121 0-3.182 0-3.841-.659S13 8.621 13 6.5s0-3.182.659-3.841S15.379 2 17.5 2s3.182 0 3.841.659S22 4.379 22 6.5s0 3.182-.659 3.841S19.621 11 17.5 11m-1.47-7.03a.75.75 0 1 0-1.06 1.06l1.47 1.47l-1.47 1.47a.75.75 0 0 0 1.06 1.06l1.47-1.47l1.47 1.47a.75.75 0 1 0 1.06-1.06L18.56 6.5l1.47-1.47a.75.75 0 0 0-1.06-1.06L17.5 5.44z' clip-rule='evenodd'/%3E%3C/svg%3E"},
-    lastupdate: new Date(1788479664056),
+    lastupdate: new Date(1788514764705),
     scroll_behavior: "smooth",
     cdn: {
       jquery: "https://unpkg.com/jquery@3.7.1/dist/jquery.min.js",
@@ -2544,7 +2543,7 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
 
 
-    <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"QinYin-xcy的博客","url":"https://www.qianyin-xcy.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1761982841160/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"QianYin-xcy","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1761982841160/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://www.qianyin-xcy.top/","sameAs":["https://github.com/volantis-x"],"description":"这是一个个人博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://www.qianyin-xcy.top/","name":"QinYin-xcy的博客"}},{"@type":"ListItem","position":2,"item":{"@id":"https://www.qianyin-xcy.top/categories/笔记/","name":"笔记"}},{"@type":"ListItem","position":3,"item":{"@id":"https://www.qianyin-xcy.top/2026/09/03/C_launguage_wrong answer/","name":"C语言错题"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"QinYin-xcy的博客","url":"https://www.qianyin-xcy.top/","keywords":null,"description":"这是一个个人博客","author":{"@type":"Person","name":"QianYin-xcy","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1761982841160/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://www.qianyin-xcy.top/","description":"这是一个个人博客"},"publisher":{"@type":"Organization","name":"QinYin-xcy的博客","url":"https://www.qianyin-xcy.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1761982841160/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://www.qianyin-xcy.top?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"C语言错题","description":"这是一个个人博客","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.qianyin-xcy.top/2026/09/03/C_launguage_wrong%20answer/"},"author":{"@type":"Person","name":"QianYin-xcy","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1761982841160/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://www.qianyin-xcy.top/"},"publisher":{"@type":"Organization","name":"QinYin-xcy的博客","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1761982841160/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://www.qianyin-xcy.top/2026/09/03/C_launguage_wrong%20answer/","wordCount":0,"datePublished":"2026-09-03T00:49:47.616Z","dateModified":"2026-09-03T23:53:39.265Z","articleSection":"笔记","keywords":"C语言错题","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1761982841160/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+    <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"QinYin-xcy的博客","url":"https://www.qianyin-xcy.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1761982841160/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"QianYin-xcy","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1761982841160/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://www.qianyin-xcy.top/","sameAs":["https://github.com/volantis-x"],"description":"这是一个个人博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://www.qianyin-xcy.top/","name":"QinYin-xcy的博客"}},{"@type":"ListItem","position":3,"item":{"@id":"https://www.qianyin-xcy.top/2026/09/04/Interview_question/","name":"面试题"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"QinYin-xcy的博客","url":"https://www.qianyin-xcy.top/","keywords":null,"description":"这是一个个人博客","author":{"@type":"Person","name":"QianYin-xcy","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1761982841160/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://www.qianyin-xcy.top/","description":"这是一个个人博客"},"publisher":{"@type":"Organization","name":"QinYin-xcy的博客","url":"https://www.qianyin-xcy.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1761982841160/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://www.qianyin-xcy.top?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"面试题","description":"这是一个个人博客","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.qianyin-xcy.top/2026/09/04/Interview_question/"},"author":{"@type":"Person","name":"QianYin-xcy","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1761982841160/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://www.qianyin-xcy.top/"},"publisher":{"@type":"Organization","name":"QinYin-xcy的博客","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1761982841160/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://www.qianyin-xcy.top/2026/09/04/Interview_question/","wordCount":0,"datePublished":"2026-09-04T00:50:41.947Z","dateModified":"2026-09-04T02:12:55.180Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1761982841160/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
   <!-- import head_end begin -->
   <!-- import head_end end -->
   <!-- Custom Files headEnd begin-->
@@ -2916,13 +2915,13 @@ document.addEventListener('DOMContentLoaded', function () {
 <div id="l_main" class=''>
   <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable article-type-post" id="post" itemscope itemprop="blogPost">
   <!-- 结构化数据：统一解码永久链接 -->
-  <link itemprop="mainEntityOfPage" href="https://www.qianyin-xcy.top/2026/09/03/C_launguage_wrong answer/">
+  <link itemprop="mainEntityOfPage" href="https://www.qianyin-xcy.top/2026/09/04/Interview_question/">
   <!-- 结构化数据：发布者信息（隐藏） -->
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="QinYin-xcy的博客">
   </span>
   <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="name" content="C语言错题">
+    <meta itemprop="name" content="面试题">
     <meta itemprop="description" content="这是一个个人博客">
   </span>
   <!-- 文章顶部元信息：标题、作者、日期等（复用子模板） -->
@@ -2935,7 +2934,7 @@ document.addEventListener('DOMContentLoaded', function () {
     
     
       <h1 class="title allow-select" itemprop="name headline">
-        C语言错题
+        面试题
       </h1>
     
     
@@ -2954,29 +2953,15 @@ document.addEventListener('DOMContentLoaded', function () {
       
         
           
-  
-  
-  
-  <div class='new-meta-item category'>
-    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
-    <a class="category-link" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a>
-    
-      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-        <a href="/categories/%E7%AC%94%E8%AE%B0/" itemprop="url"><span itemprop="name">笔记</span></a>
-      </span>
-    
-  </div>
-  
-
 
 
         
       
         
-          <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2026-09-03T08:49:47+08:00">
+          <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2026-09-04T08:50:41+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：Sep 3, 2026</p>
+    <p>发布于：Sep 4, 2026</p>
   </a>
 </div>
 
@@ -3001,34 +2986,7 @@ document.addEventListener('DOMContentLoaded', function () {
   <div id="layoutHelper-page-plugins"></div>
   <!-- 文章核心内容区 -->
   <div id="post-body" itemprop="articleBody">
-    <blockquote>
-<p>记录学习过程中错误、混淆的 C 语言知识点，持续更新……</p>
-</blockquote>
-<hr>
-<p>📌 <strong>第 1 题</strong>：^和&lt;&lt;的优先级<br>设有以下语句：</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">char</span> a = <span class="number">3</span>, b = <span class="number">6</span>, c;</span><br><span class="line">c = a ^ b &lt;&lt; <span class="number">2</span>;</span><br></pre></td></tr></table></figure>
-<p>则 c 的二进制值是 ______。</p>
-<p>❌ <span style="color: red;">我的错误答案：</span>0100（即十进制 4）,错误原因：混淆了 ^ 和 &lt;&lt; 的优先级，误以为按位异或先于左移，于是先计算 a ^ b，再左移 2 位。</p>
-<p>✅ <span style="color: green;">正确解析</span>：在 C 语言中，左移运算符 &lt;&lt; 的优先级高于按位异或 ^，所以原式等价于 a ^ (b &lt;&lt; 2)。<br>计算过程：6 &lt;&lt; 2 &#x3D; 24（二进制 11000）   3 ^ 24 &#x3D; 27（二进制 11011）</p>
-<p><span style="color: green;">正确答案：</span>11011（十进制 27）<br><br></p>
-<p>📌 <strong>第 2 题</strong>：结构体指针与成员访问<br>根据以下定义，错误 的表达式是：</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> &#123;</span><span class="type">int</span> a; <span class="type">char</span> b;&#125; Q, *p = &amp;Q;</span><br><span class="line">A. Q.a   B. (*p).b   C. p-&gt;a  D. *p.b</span><br></pre></td></tr></table></figure>
-
-<p>❌<span style="color: red;">我的错误倾向</span>容易混淆 *p.b 与 (*p).b，忽略了成员运算符 . 的优先级高于解引用 *。</p>
-<p>✅ <span style="color: green">正确解析</span>：成员访问运算符 . 的优先级 高于 解引用运算符 *，因此 *p.b 会被解析为 *(p.b)。但 p 是指针，不能直接用 . 访问成员，必须写作 (*p).b 或 p-&gt;b。</p>
-<p><span style="color: green">正确答案：</span>D. *p.b<br><br></p>
-<p>📌 <strong>第 3 题</strong>：结构体首地址与强制类型转换<br>分析以下代码的运算结果：</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">node</span> &#123;</span></span><br><span class="line">    <span class="type">int</span> a; <span class="type">int</span> b; <span class="type">int</span> c;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">node</span> <span class="title">s</span> =</span> &#123;<span class="number">3</span>, <span class="number">5</span>, <span class="number">6</span>&#125;;</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">node</span> *<span class="title">pt</span> =</span> &amp;s;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, *(<span class="type">int</span> *)pt);</span><br></pre></td></tr></table></figure>
-<p>❌ 我的错误答案：6</p>
-<p><span style="color: red;">错误原因：</span>误以为指针 pt 指向结构体的末尾（成员 c），实际上指针存储的是结构体的 首地址。</p>
-<p>✅ <span style="color: green;">正确解析：</span>结构体在内存中连续分布，其首地址即第一个成员 a 的地址。(int *)pt 将结构体指针强转为整型指针，解引用后读取从首地址开始的 int 大小数据，正好是成员 a 的值。</p>
-<p><span style="color: green;">正确答案：</span>3<br><br></p>
-<p>📌 <strong>第 4 题</strong>：冒泡排序实现<br>用 C 语言对数组 a[10] &#x3D; {6, 2, 8, 11, 0, 7, 3, -3, 9, 12} 进行 升序排列。</p>
-<p>❌ <span style="color: red;">我的错误状态：</span>对排序算法的双重循环逻辑不熟练，不知道如何通过嵌套循环实现元素比较与交换。</p>
-<p>✅ <span style="color: green;">正确解析（冒泡排序）：</span>核心思想：两两比较相邻元素，如果反序则交换，每轮将当前最大值“冒泡”到数组末端。</p>
-<p>完整代码：</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">int</span> a[<span class="number">10</span>] = &#123;<span class="number">6</span>, <span class="number">2</span>, <span class="number">8</span>, <span class="number">11</span>, <span class="number">0</span>, <span class="number">7</span>, <span class="number">3</span>, <span class="number">-3</span>, <span class="number">9</span>, <span class="number">12</span>&#125;;</span><br><span class="line">    <span class="type">int</span> i, j, temp;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 外层循环：控制轮数（10个数需 9 轮）</span></span><br><span class="line">    <span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; <span class="number">9</span>; i++) &#123;</span><br><span class="line">        <span class="comment">// 内层循环：每轮两两比较，最大值沉底</span></span><br><span class="line">        <span class="keyword">for</span> (j = <span class="number">0</span>; j &lt; <span class="number">9</span> - i; j++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (a[j] &gt; a[j + <span class="number">1</span>]) &#123;</span><br><span class="line">                temp = a[j];</span><br><span class="line">                a[j] = a[j + <span class="number">1</span>];</span><br><span class="line">                a[j + <span class="number">1</span>] = temp;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 打印排序结果</span></span><br><span class="line">    <span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; <span class="number">10</span>; i++) &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>, a[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>运行结果：-3 0 2 3 6 7 8 9 11 12</p>
+    <p><strong>嵌入式介绍</strong><br>（1）嵌入式是一个体积小，效率高，软硬件可裁剪的系统软件。(对体积小，效率高，软硬件可裁剪进行补充)<br><strong>嵌入式开发语言</strong><br>（1）C语言 –底层开发 – 面向过程<br><strong>嵌入式开发平台</strong><br>（1）Linux系统 – ubuntu系统 （2）安装虚拟机 – VMware （3）安装ubantu</p>
 
   </div>
   <!-- 原文链接/阅读更多：仅当page.link存在时显示 -->
@@ -3056,7 +3014,7 @@ document.addEventListener('DOMContentLoaded', function () {
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2026-09-04T07:53:39+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2026-09-04T10:12:55+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
     <p>更新于：Sep 4, 2026</p>
@@ -3067,13 +3025,6 @@ document.addEventListener('DOMContentLoaded', function () {
       
         
           
-  
-  
-  
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/C%E8%AF%AD%E8%A8%80%E9%94%99%E9%A2%98/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>C语言错题</p></a></div>
-  <span hidden itemprop="keywords">C语言错题</span>
-  
-
 
         
       
@@ -3085,7 +3036,7 @@ document.addEventListener('DOMContentLoaded', function () {
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://www.qianyin-xcy.top/2026/09/03/C_launguage_wrong%20answer/&title=C语言错题 - QinYin-xcy的博客&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://www.qianyin-xcy.top/2026/09/04/Interview_question/&title=面试题 - QinYin-xcy的博客&summary="
           
           >
           
@@ -3097,7 +3048,7 @@ document.addEventListener('DOMContentLoaded', function () {
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://www.qianyin-xcy.top/2026/09/03/C_launguage_wrong%20answer/&title=C语言错题 - QinYin-xcy的博客&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://www.qianyin-xcy.top/2026/09/04/Interview_question/&title=面试题 - QinYin-xcy的博客&summary="
           
           >
           
@@ -3109,7 +3060,7 @@ document.addEventListener('DOMContentLoaded', function () {
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=https://www.qianyin-xcy.top/2026/09/03/C_launguage_wrong%20answer/&title=C语言错题 - QinYin-xcy的博客&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://www.qianyin-xcy.top/2026/09/04/Interview_question/&title=面试题 - QinYin-xcy的博客&summary="
           
           >
           
@@ -3143,16 +3094,15 @@ document.addEventListener('DOMContentLoaded', function () {
   
     <div class="prev-next">
       
-        <a class='prev' href='/2026/09/03/IIC/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>IIC协议</p>
+        <a class='prev' href='/2026/09/04/C_language/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>C语言</p>
           <p class='content'></p>
         </a>
       
       
-        <a class='next' href='/2026/09/02/Common_Linux_commands/'>
-          <p class='title'>linux常见命令<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>在Linux终端下工作，掌握常用命令是基本技能。
-</p>
+        <a class='next' href='/2026/09/04/Data_structure/'>
+          <p class='title'>算法<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'></p>
         </a>
       
     </div>
@@ -3171,7 +3121,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   <article class="post white-box shadow floatable" id="comments">
     <span hidden>
-      <meta itemprop="discussionUrl" content="/2026/09/03/C_launguage_wrong%20answer/index.html#comments">
+      <meta itemprop="discussionUrl" content="/2026/09/04/Interview_question/index.html#comments">
     </span>
     <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
@@ -3223,7 +3173,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
   <div class='content'>
-    <widget class="widget-wrapper recent post-list"><div class="widget-body fs14"><a class="item title" href="/2026/09/03/C_launguage_wrong%20answer/"><span class="title">C语言错题</span></a><a class="item title" href="/2026/09/03/SPI/"><span class="title">SPI协议</span></a><a class="item title" href="/2026/09/03/Single_wire/"><span class="title">单总线协议</span></a><a class="item title" href="/2026/09/03/IIC/"><span class="title">IIC协议</span></a><a class="item title" href="/2026/09/03/FreeRTOS/"><span class="title">FreeRTOS操作系统</span></a><a class="item title" href="/2026/09/02/Common_Linux_commands/"><span class="title">linux常见命令</span></a><a class="item title" href="/2026/09/03/CAN/"><span class="title">CAN协议</span></a><a class="item title" href="/2026/09/01/GitHub_Blog_Setup/"><span class="title">github搭建博客（volantis主题）</span></a><a class="item title" href="/2026/08/29/USART/"><span class="title">USART协议</span></a></div></widget>
+    <widget class="widget-wrapper recent post-list"><div class="widget-body fs14"><a class="item title" href="/2026/09/02/Common_Linux_commands/"><span class="title">linux常见命令</span></a><a class="item title" href="/2026/09/04/Interview_question/"><span class="title">面试题</span></a><a class="item title" href="/2026/09/04/C_language/"><span class="title">C语言</span></a><a class="item title" href="/2026/09/04/Data_structure/"><span class="title">算法</span></a><a class="item title" href="/2026/09/03/C_launguage_wrong_answer/"><span class="title">C语言错题</span></a><a class="item title" href="/2026/09/03/SPI/"><span class="title">SPI协议</span></a><a class="item title" href="/2026/09/03/Single_wire/"><span class="title">单总线协议</span></a><a class="item title" href="/2026/09/03/IIC/"><span class="title">IIC协议</span></a><a class="item title" href="/2026/09/03/FreeRTOS/"><span class="title">FreeRTOS操作系统</span></a><a class="item title" href="/2026/09/03/CAN/"><span class="title">CAN协议</span></a></div></widget>
   </div>
 </section>
 
